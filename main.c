@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 15:02:58 by darbib            #+#    #+#             */
-/*   Updated: 2019/04/08 18:03:24 by darbib           ###   ########.fr       */
+/*   Updated: 2019/04/09 10:49:43 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -259,6 +259,33 @@ int main()
 	printf("% -0#+d\n", 0);
 	printf("% -0#+d\n", -42);
 
+// ---------- LMC & precision ---------
+
+	printf("%3d", 42);
+	printf("%3d", 0);
+	printf("%3d", -42);
+	printf("%.7d", 42);
+	printf("%.7d", 0);
+	printf("%.7d", -42);
+	printf("%3.7d", 42);
+	printf("%3.7d", 0);
+	printf("%3.7d", -42);
+
+// --------- sizes ----------
+
+	printf("%hd\n", (short)42);
+	printf("%hd\n", (short)0);
+	printf("%hd\n", (short)-42);
+	printf("%hhd\n", (char)42);
+	printf("%hhd\n", (char)0);
+	printf("%hhd\n", (char)-42);
+	printf("%ld\n", (long)42);
+	printf("%ld\n", (long)0);
+	printf("%ld\n", (long)-42);
+	printf("%lld\n", (long long)42);
+	printf("%lld\n", (long long)0);
+	printf("%lld\n", (long long)-42);
+
 // ---------- repetitive conversions --------
 
 	printf("%d%d%d\n", 42, 0, -42);
@@ -267,14 +294,26 @@ int main()
 	printf("%#d% d%0d\n", 42, 0, -42);
 	printf("%d% d%0d\n", 42, 0, -42);
 	printf("%d% d%0d\n", 42, 0, -42);
+	printf("%d% d%0d\n", 42, 0, -42);
+	printf("%d% d%0d\n", 42, 0, -42);
+	printf("%d% d%0d\n", 42, 0, -42);
+	printf("%d% d%0d\n", 42, 0, -42);
+	printf("%d% d%0d\n", 42, 0, -42);
+	printf("%d% d%0d\n", 42, 0, -42);
+	printf("%d% d%0d\n", 42, 0, -42);
+	printf("%d% d%0d\n", 42, 0, -42);
+	printf("%d% d%0d\n", 42, 0, -42);
+	printf("%d% d%0d\n", 42, 0, -42);
+	printf("%d% d%0d\n", 42, 0, -42);
 
-// ----------- invalid flags ---------
+// ----------- invalid printf ---------
 
-	printf("%0 d\n", 42);
-	printf("%d\n", printf("%0 d\n", 42));
-	printf("%+-#0 d\n", 42);
-	printf("%d\n", 0);
-	printf("%d\n", -42);
+	printf("%d\n", printf("aha!\n", 42));
+	printf("%d\n", printf("%d\n"));
+	printf("%d\n", printf("%#d\n", 42));
+	printf("%d\n", printf("%h\n"));
+	printf("%d\n", printf("%yd\n"));
+	printf("%d\n", printf("%^d\n"));
 	numeric_tests();
 	chars_tests();
 	mixed_tests();
