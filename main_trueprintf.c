@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 15:02:58 by darbib            #+#    #+#             */
-/*   Updated: 2019/04/09 10:49:43 by darbib           ###   ########.fr       */
+/*   Updated: 2019/04/09 15:57:53 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -290,8 +290,8 @@ int main()
 
 	printf("%d%d%d\n", 42, 0, -42);
 	printf("%d    %d           %d\n", 42, 0, -42);
-	printf("%d% d%d\n", 42, 0, -42);
 	printf("%#d% d%0d\n", 42, 0, -42);
+	printf("%d\n", printf("%ld%hd%d\n", (long)42, (short)0, -42));
 	printf("%d% d%0d\n", 42, 0, -42);
 	printf("%d% d%0d\n", 42, 0, -42);
 	printf("%d% d%0d\n", 42, 0, -42);
@@ -312,8 +312,10 @@ int main()
 	printf("%d\n", printf("%d\n"));
 	printf("%d\n", printf("%#d\n", 42));
 	printf("%d\n", printf("%h\n"));
-	printf("%d\n", printf("%yd\n"));
-	printf("%d\n", printf("%^d\n"));
+	printf("%d\n", printf("%yd\n", 42));
+	printf("%d\n", printf("%ll3.5\n", 42));
+	printf("%d\n", printf("%ld%hd%d\n", (short)42, (long)0, -42));
+	printf("%d\n", printf("%ld%hd%d\n", (short)42, 0, (long)-42));
 	numeric_tests();
 	chars_tests();
 	mixed_tests();
