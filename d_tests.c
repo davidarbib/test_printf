@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/11 15:49:35 by darbib            #+#    #+#             */
-/*   Updated: 2019/04/11 16:19:42 by darbib           ###   ########.fr       */
+/*   Updated: 2019/04/12 10:19:13 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -308,4 +308,9 @@ void	d_tests()
 	printf("%d\n", ft_printf("%ll3.5\n", 42));
 	printf("%d\n", ft_printf("%ld%hd%d\n", (short)42, (long)0, -42));
 	printf("%d\n", ft_printf("%ld%hd%d\n", (short)42, 0, (long)-42));
+
+// ----------- all together -----------
+
+	printf("------- together --------\n");
+	printf("%d\n", ft_printf("\n", 42));
 }

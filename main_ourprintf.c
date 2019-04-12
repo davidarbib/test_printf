@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 15:02:58 by darbib            #+#    #+#             */
-/*   Updated: 2019/04/11 15:57:22 by darbib           ###   ########.fr       */
+/*   Updated: 2019/04/12 14:15:17 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int main()
 {
 	d_tests();
-	i_tests();
+/*	i_tests();
 	o_tests();
 	u_tests();
 	x_tests();
@@ -24,5 +24,6 @@ int main()
 	s_tests();
 	p_tests();
 	f_tests();
+*/
 	return (0);
 }
