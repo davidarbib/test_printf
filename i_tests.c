@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 15:02:58 by darbib            #+#    #+#             */
-/*   Updated: 2019/04/13 14:15:59 by darbib           ###   ########.fr       */
+/*   Updated: 2019/04/13 14:37:19 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdio.h>
 
 
-int main()
+void i_tests()
 {
 	printf("-------- conversion i ----------\n");
 	printf("-------- simple ----------\n");
@@ -105,18 +105,6 @@ int main()
 	printf("%d\n",ft_printf("%00000000++++++++i\n", 42));
 	printf("%d\n",ft_printf("%00000000++++++++i\n", 0));
 	printf("%d\n",ft_printf("%00000000++++++++i\n", -42));
-	printf("%d\n",ft_printf("%++++++++        i\n", 42));
-	printf("%d\n",ft_printf("%++++++++        i\n", 0));
-	printf("%d\n",ft_printf("%++++++++        i\n", -42));
-	printf("%d\n",ft_printf("%        ++++++++i\n", 42));
-	printf("%d\n",ft_printf("%        ++++++++i\n", 0));
-	printf("%d\n",ft_printf("%        ++++++++i\n", -42));
-	printf("%d\n",ft_printf("%--------00000000i\n", 42));
-	printf("%d\n",ft_printf("%--------00000000i\n", 0));
-	printf("%d\n",ft_printf("%--------00000000i\n", -42));
-	printf("%d\n",ft_printf("%00000000--------i\n", 42));
-	printf("%d\n",ft_printf("%00000000--------i\n", 0));
-	printf("%d\n",ft_printf("%00000000--------i\n", -42));
 	printf("%d\n",ft_printf("%--------        i\n", 42));
 	printf("%d\n",ft_printf("%--------        i\n", 0));
 	printf("%d\n",ft_printf("%--------        i\n", -42));

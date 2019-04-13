@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   d_tests.c                                          :+:      :+:    :+:   */
+/*   true_o_tests.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/05 15:02:58 by darbib            #+#    #+#             */
-/*   Updated: 2019/04/13 13:44:55 by darbib           ###   ########.fr       */
+/*   Created: 2019/04/13 14:32:48 by darbib            #+#    #+#             */
+/*   Updated: 2019/04/13 14:34:23 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,19 @@
 #include <stdio.h>
 
 
-int main()
+void true_o_tests()
 {
-	printf("-------- conversion i ----------\n");
+	printf("-------- conversion o ----------\n");
 	printf("-------- simple ----------\n");
-	printf("%d\n",printf("%i\n", 42));
-	printf("%d\n",printf("%i\n", 0));
-	printf("%d\n",printf("%i\n", -42));
-	printf("%d\n",printf("%0i\n", 42));
-	printf("%d\n",printf("%0i\n", 0));
-	printf("%d\n",printf("%0i\n", -42));
-	printf("%d\n",printf("%#i\n", 42));
-	printf("%d\n",printf("%#i\n", 0));
-	printf("%d\n",printf("%#i\n", -42));
+	printf("%d\n",printf("%o\n", 42));
+	printf("%d\n",printf("%o\n", 0));
+	printf("%d\n",printf("%o\n", -42));
+	printf("%d\n",printf("%0o\n", 42));
+	printf("%d\n",printf("%0o\n", 0));
+	printf("%d\n",printf("%0o\n", -42));
+	printf("%d\n",printf("%#o\n", 42));
+	printf("%d\n",printf("%#o\n", 0));
+	printf("%d\n",printf("%#o\n", -42));
 	printf("%d\n",printf("%-i\n", 42));
 	printf("%d\n",printf("%-i\n", 0));
 	printf("%d\n",printf("%-i\n", -42));
@@ -64,7 +64,7 @@ int main()
 	printf("%d\n",printf("%i\n", 42));
 	printf("%d\n",printf("%i\n", 0));
 	printf("%d\n",printf("%i\n", -42));
-	printf("%d\n",printf("%0j\n", 42));
+	printf("%d\n",printf("%0i\n", 42));
 	printf("%d\n",printf("%0i\n", 0));
 	printf("%d\n",printf("%0i\n", -42));
 	printf("%d\n",printf("%#i\n", 42));
