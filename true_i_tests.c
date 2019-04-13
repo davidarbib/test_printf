@@ -6,13 +6,11 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/13 14:06:18 by darbib            #+#    #+#             */
-/*   Updated: 2019/04/13 14:36:11 by darbib           ###   ########.fr       */
+/*   Updated: 2019/04/13 19:56:31 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
-#include "testprintf.h"
-#include <stdio.h>
+#include "testft_printf.h"
 
 
 void true_i_tests()
@@ -34,48 +32,6 @@ void true_i_tests()
 	printf("%d\n",printf("%+i\n", 42));
 	printf("%d\n",printf("%+i\n", 0));
 	printf("%d\n",printf("%+i\n", -42));
-	printf("%d\n",printf("% i\n", 42));
-	printf("%d\n",printf("% i\n", 0));
-	printf("%d\n",printf("% i\n", -42));
-	printf("%d\n",printf("%%i\n", 42));
-	printf("%d\n",printf("%%i\n", 0));
-	printf("%d\n",printf("%%i\n", -42));
-	printf("%d\n",printf("%%0i\n", 42));
-	printf("%d\n",printf("%%0i\n", 0));
-	printf("%d\n",printf("%%0i\n", -42));
-	printf("%d\n",printf("%%-i\n", 42));
-	printf("%d\n",printf("%%-i\n", 0));
-	printf("%d\n",printf("%%-i\n", -42));
-	printf("%d\n",printf("%% i\n", 42));
-	printf("%d\n",printf("%% i\n", 0));
-	printf("%d\n",printf("%% i\n", -42));
-	printf("%d\n",printf("%%+i\n", 42));
-	printf("%d\n",printf("%%+i\n", 0));
-	printf("%d\n",printf("%%+i\n", -42));
-	printf("%d\n",printf("%% i\n", 42));
-	printf("%d\n",printf("%% i\n", 0));
-	printf("%d\n",printf("%% i\n", -42));
-	printf("%d\n",printf("%i\n", 42));
-	printf("%d\n",printf("%i\n", 0));
-	printf("%d\n",printf("%i\n", -42));
-	printf("%d\n",printf("%0i\n", 42));
-	printf("%d\n",printf("%0i\n", 0));
-	printf("%d\n",printf("%0i\n", -42));
-	printf("%d\n",printf("%#i\n", 42));
-	printf("%d\n",printf("%#i\n", 0));
-	printf("%d\n",printf("%#i\n", -42));
-	printf("%d\n",printf("%-i\n", 42));
-	printf("%d\n",printf("%-i\n", 0));
-	printf("%d\n",printf("%-i\n", -42));
-	printf("%d\n",printf("% i\n", 42));
-	printf("%d\n",printf("% i\n", 0));
-	printf("%d\n",printf("% i\n", -42));
-	printf("%d\n",printf("%+i\n", 42));
-	printf("%d\n",printf("%+i\n", 0));
-	printf("%d\n",printf("%+i\n", -42));
-	printf("%d\n",printf("% i\n", 42));
-	printf("%d\n",printf("% i\n", 0));
-	printf("%d\n",printf("% i\n", -42));
 
 // -------- repetitive options ---------- 
 
@@ -155,7 +111,7 @@ void true_i_tests()
 	printf("------- n_conversions --------\n");
 	printf("%d\n",printf("%i%i%i\n", 42, 0, -42));
 	printf("%d\n",printf("%i    %i           %i\n", 42, 0, -42));
-	printf("%d\n",printf("%#i% i%0i\n", 42, 0, -42));
+	printf("%d\n",printf("%-i% i%0i\n", 42, 0, -42));
 	printf("%d\n", printf("%li%hi%i\n", (long)42, (short)0, -42));
 
 // ------------- together ---------------

@@ -1,19 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   d_tests.c                                          :+:      :+:    :+:   */
+/*   i_tests.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/05 15:02:58 by darbib            #+#    #+#             */
-/*   Updated: 2019/04/13 14:37:19 by darbib           ###   ########.fr       */
+/*   Created: 2019/04/13 14:43:27 by darbib            #+#    #+#             */
+/*   Updated: 2019/04/13 20:02:10 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
-#include "testprintf.h"
-#include <stdio.h>
-
+#include "testft_printf.h"
 
 void i_tests()
 {
@@ -33,46 +30,6 @@ void i_tests()
 	printf("%d\n",ft_printf("% i\n", -42));
 	printf("%d\n",ft_printf("%+i\n", 42));
 	printf("%d\n",ft_printf("%+i\n", 0));
-	printf("%d\n",ft_printf("%+i\n", -42));
-	printf("%d\n",ft_printf("% i\n", 42));
-	printf("%d\n",ft_printf("% i\n", 0));
-	printf("%d\n",ft_printf("% i\n", -42));
-	printf("%d\n",ft_printf("%%i\n", 42));
-	printf("%d\n",ft_printf("%%i\n", 0));
-	printf("%d\n",ft_printf("%%i\n", -42));
-	printf("%d\n",ft_printf("%%0i\n", 42));
-	printf("%d\n",ft_printf("%%0i\n", 0));
-	printf("%d\n",ft_printf("%%0i\n", -42));
-	printf("%d\n",ft_printf("%%-i\n", 42));
-	printf("%d\n",ft_printf("%%-i\n", 0));
-	printf("%d\n",ft_printf("%%-i\n", -42));
-	printf("%d\n",ft_printf("%% i\n", 42));
-	printf("%d\n",ft_printf("%% i\n", 0));
-	printf("%d\n",ft_printf("%% i\n", -42));
-	printf("%d\n",ft_printf("%%+i\n", 42));
-	printf("%d\n",ft_printf("%%+i\n", 0));
-	printf("%d\n",ft_printf("%%+i\n", -42));
-	printf("%d\n",ft_printf("%% i\n", 42));
-	printf("%d\n",ft_printf("%% i\n", 0));
-	printf("%d\n",ft_printf("%% i\n", -42));
-	printf("%d\n",ft_printf("%i\n", 42));
-	printf("%d\n",ft_printf("%i\n", 0));
-	printf("%d\n",ft_printf("%i\n", -42));
-	printf("%d\n",ft_printf("%0i\n", 42));
-	printf("%d\n",ft_printf("%0i\n", 0));
-	printf("%d\n",ft_printf("%0i\n", -42));
-	printf("%d\n",ft_printf("%-i\n", 42));
-	printf("%d\n",ft_printf("%-i\n", 0));
-	printf("%d\n",ft_printf("%-i\n", -42));
-	printf("%d\n",ft_printf("% i\n", 42));
-	printf("%d\n",ft_printf("% i\n", 0));
-	printf("%d\n",ft_printf("% i\n", -42));
-	printf("%d\n",ft_printf("%+i\n", 42));
-	printf("%d\n",ft_printf("%+i\n", 0));
-	printf("%d\n",ft_printf("%+i\n", -42));
-	printf("%d\n",ft_printf("% i\n", 42));
-	printf("%d\n",ft_printf("% i\n", 0));
-	printf("%d\n",ft_printf("% i\n", -42));
 
 // -------- repetitive options ---------- 
 
@@ -147,12 +104,12 @@ void i_tests()
 	printf("%d\n",ft_printf("%lli\n", (long long)0));
 	printf("%d\n",ft_printf("%lli\n", (long long)-42));
                    
-// ---------- repe titive conversions --------
-                   
+// ---------- repetitive conversions --------
+                  
 	printf("------- n_conversions --------\n");
 	printf("%d\n",ft_printf("%i%i%i\n", 42, 0, -42));
 	printf("%d\n",ft_printf("%i    %i           %i\n", 42, 0, -42));
-	printf("%d\n",ft_printf("%+i% i%0i\n", 42, 0, -42));
+	printf("%d\n",ft_printf("%-i% i%0i\n", 42, 0, -42));
 	printf("%d\n",ft_printf("%li%hi%i\n", (long)42, (short)0, -42));
                    
 // ------------- together ---------------

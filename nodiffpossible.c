@@ -153,3 +153,15 @@
 	printf("%d\n", printf("%ll3.5\n", 42));
 	printf("%d\n", printf("%ld%hd%d\n", (short)42, (long)0, -42));
 	printf("%d\n", printf("%ld%hd%d\n", (short)42, 0, (long)-42));
+	printf("%d\n",printf("%--------00000000o\n", 42));
+	printf("%d\n",printf("%--------00000000o\n", 0));
+	printf("%d\n",printf("%--------00000000o\n", -42));
+	printf("%d\n",printf("%00000000--------o\n", 42));
+	printf("%d\n",printf("%00000000--------o\n", 0));
+	printf("%d\n",printf("%00000000--------o\n", -42));
+	printf("%d\n",printf("%--------00000000u\n", 42));
+	printf("%d\n",printf("%--------00000000u\n", 0));
+	printf("%d\n",printf("%--------00000000u\n", -42));
+	printf("%d\n",printf("%00000000--------u\n", 42));
+	printf("%d\n",printf("%00000000--------u\n", 0));
+	printf("%d\n",printf("%00000000--------u\n", -42));
