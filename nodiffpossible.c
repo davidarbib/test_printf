@@ -159,9 +159,9 @@
 	printf("%d\n",printf("%00000000--------o\n", 42));
 	printf("%d\n",printf("%00000000--------o\n", 0));
 	printf("%d\n",printf("%00000000--------o\n", -42));
-	printf("%d\n",printf("%--------00000000u\n", 42));
-	printf("%d\n",printf("%--------00000000u\n", 0));
-	printf("%d\n",printf("%--------00000000u\n", -42));
-	printf("%d\n",printf("%00000000--------u\n", 42));
-	printf("%d\n",printf("%00000000--------u\n", 0));
-	printf("%d\n",printf("%00000000--------u\n", -42));
+	printf("%d\n",printf("%--------00000000x\n", 42));
+	printf("%d\n",printf("%--------00000000x\n", 0));
+	printf("%d\n",printf("%--------00000000x\n", -42));
+	printf("%d\n",printf("%00000000--------x\n", 42));
+	printf("%d\n",printf("%00000000--------x\n", 0));
+	printf("%d\n",printf("%00000000--------x\n", -42));

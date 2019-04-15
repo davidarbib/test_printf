@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/13 21:23:17 by darbib            #+#    #+#             */
-/*   Updated: 2019/04/13 21:55:11 by darbib           ###   ########.fr       */
+/*   Updated: 2019/04/15 10:28:00 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,5 +93,5 @@ void true_u_tests()
 	printf("%d\n", printf("%05.9lu%-6.10u%u%%u%7u%uu\n", (long)1, 2, -3, -4, 5));
 	printf("%d\n", printf("%%u%uu%uu%%u\n", 1, 2));
 	printf("%d\n", printf("%%u%%u%%u%%u\n"));
-	printf("%d\n", printf("%u\n",4294967295));
+	printf("%d\n", printf("%u\n",(unsigned int)4294967295));
 }

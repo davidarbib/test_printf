@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/13 20:08:20 by darbib            #+#    #+#             */
-/*   Updated: 2019/04/13 21:22:22 by darbib           ###   ########.fr       */
+/*   Updated: 2019/04/15 10:36:42 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,21 +102,21 @@ void o_tests()
 // ---------- repetitive conversions --------
 
 	printf("------- n_conversions --------\n");
-	printf("%d\n",ft_printf("%o%o%o\n", 42, 0, -42));
-	printf("%d\n",ft_printf("%o    %o           %o\n", 42, 0, -42));
-	printf("%d\n",ft_printf("%#o%o%0o\n", 42, 0, -42));
-	printf("%d\n",ft_printf("%lo%ho%o\n", (long)42, (short)0, -42));
+	printf("%d\n",printf("%o%o%o\n", 42, 0, -42));
+	printf("%d\n",printf("%o    %o           %o\n", 42, 0, -42));
+	printf("%d\n",printf("%#o%o%0o\n", 42, 0, -42));
+	printf("%d\n", printf("%lo%ho%o\n", (long)42, (short)0, -42));
 
 // ------------- together ---------------
 
 	printf("------- together --------\n");
-	printf("%d\n", ft_printf("%-10.3llo\n people waiting", (long long)100));
-	printf("%d\n", ft_printf("time before world end : %2147483647.15ho days\n", (short)0));
-	printf("%d\n", ft_printf("%.2o\n", 42));
-	printf("%d\n", ft_printf("%010.3llo\n", (long long)42));
-	printf("%d\n", ft_printf("0%0.2o0\n", 42));
-	printf("%d\n", ft_printf("%-5.6llo%#3.7ho%o%%o%7o%oo\n", (long long)1, (short)2, -3, -4, 5));
-	printf("%d\n", ft_printf("%05.9lo%-6.10o%o%%o%7o%oo\n", (long)1, 2, -3, -4, 5));
-	printf("%d\n", ft_printf("%%o%oo%oo%%o\n", 1, 2));
-	printf("%d\n", ft_printf("%%o%%o%%o%%o\n"));
+	printf("%d\n", printf("%-10.3llo\n people waiting", (long long)100));
+	printf("%d\n", printf("time before world end : %2147483647.15ho days\n", (short)0));
+	printf("%d\n", printf("%.2o\n", 42));
+	printf("%d\n", printf("%010.3llo\n", (long long)42));
+	printf("%d\n", printf("0%0.2o0\n", 42));
+	printf("%d\n", printf("%-5.6llo%#3.7ho%o%%o%7o%oo\n", (long long)1, (short)2, -3, -4, 5));
+	printf("%d\n", printf("%05.9lo%-6.10o%o%%o%7o%oo\n", (long)1, 2, -3, -4, 5));
+	printf("%d\n", printf("%%o%oo%oo%%o\n", 1, 2));
+	printf("%d\n", printf("%%o%%o%%o%%o\n"));
 }
