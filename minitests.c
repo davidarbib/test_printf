@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/23 13:45:46 by darbib            #+#    #+#             */
-/*   Updated: 2019/11/23 20:33:41 by darbib           ###   ########.fr       */
+/*   Updated: 2019/12/11 16:13:26 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,28 @@
 
 int	main(int ac, char **av)
 {
+	int ret;
 	(void)ac;
+	(void)av;
+
+/*
 	if (av[3] && strchr(av[3], 'n'))
 	{
-		printf(av[1], atoi(av[2]));
+		ret = printf(av[1], atoi(av[2]));
+		printf("\n");
+		printf("ret = %d\n", ret);
 		return (0);
 	}
-	printf(av[1], av[2]);
+	ret = printf(av[1], av[2]);
+	printf("\n");
+	printf("ret = %d\n", ret);
+*/
+/*
+	char *str = "a%21ki%214748k\n";
+	printf("ret : %d\n", printf(str, 'a', 'b'));
+*/
+	ret = printf("%-c\n", (char)0x1b);
+	printf("ret = %d\n", ret);
 	/*
 	(void)av;
 	printf("");
