@@ -6,13 +6,13 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/12 10:52:19 by darbib            #+#    #+#             */
-/*   Updated: 2019/04/13 13:06:12 by darbib           ###   ########.fr       */
+/*   Updated: 2019/12/11 16:21:50 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "testft_printf.h"
 
-void d_tests()
+void d_tests(char *true_buf, char *my_buf)
 {
 	printf("-------- conversion d ----------\n");
 	printf("-------- simple ----------\n");

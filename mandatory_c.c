@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 14:00:38 by darbib            #+#    #+#             */
-/*   Updated: 2019/12/11 16:19:24 by darbib           ###   ########.fr       */
+/*   Updated: 2019/12/11 23:56:15 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,5 +83,14 @@ void mandatory_c(char *true_buf, char *my_buf, int true_ret, int my_ret)
 //				-----------mix---------
 	true_ret = sprintf(true_buf, "ok%c%c", 'a', 'y');
 	my_ret = ft_sprintf(my_buf, "ok%c%c", 'a', 'y');
+	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
+	true_ret = sprintf(true_buf, "ok%5c%104c", 'a', 'y');
+	my_ret = ft_sprintf(my_buf, "ok%5c%104c", 'a', 'y');
+	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
+	true_ret = sprintf(true_buf, "       ok%-9695c  %c       ", (char)0x0d, 'y');
+	my_ret = ft_sprintf(my_buf, "       ok%-9695c  %c       ", (char)0x0d, 'y');
+	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
+	true_ret = sprintf(true_buf, "	 		%c 	%3c  oin,v,nkdsgf", 'a', 'y');
+	my_ret = ft_sprintf(my_buf, "	 		%c 	%3c  oin,v,nkdsgf", 'a', 'y');
 	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
 }

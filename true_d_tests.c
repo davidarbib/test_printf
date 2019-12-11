@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/12 10:52:19 by darbib            #+#    #+#             */
-/*   Updated: 2019/04/12 14:15:07 by darbib           ###   ########.fr       */
+/*   Updated: 2019/11/23 13:45:16 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void true_d_tests()
 	printf("%d\n",printf("%-d\n", 42));
 	printf("%d\n",printf("%-d\n", 0));
 	printf("%d\n",printf("%-d\n", -42));
+/* optionnal
 	printf("%d\n",printf("% d\n", 42));
 	printf("%d\n",printf("% d\n", 0));
 	printf("%d\n",printf("% d\n", -42));
@@ -34,6 +35,8 @@ void true_d_tests()
 	printf("%d\n",printf("% d\n", 42));
 	printf("%d\n",printf("% d\n", 0));
 	printf("%d\n",printf("% d\n", -42));
+   end optionnal
+*/
 	printf("%d\n",printf("%d\n", 42));
 	printf("%d\n",printf("%d\n", 0));
 	printf("%d\n",printf("%d\n", -42));
@@ -43,6 +46,7 @@ void true_d_tests()
 	printf("%d\n",printf("%-d\n", 42));
 	printf("%d\n",printf("%-d\n", 0));
 	printf("%d\n",printf("%-d\n", -42));
+/* optionnal
 	printf("%d\n",printf("% d\n", 42));
 	printf("%d\n",printf("% d\n", 0));
 	printf("%d\n",printf("% d\n", -42));
@@ -52,6 +56,14 @@ void true_d_tests()
 	printf("%d\n",printf("% d\n", 42));
 	printf("%d\n",printf("% d\n", 0));
 	printf("%d\n",printf("% d\n", -42));
+	printf("%d\n",printf("%.d\n", 42));
+   end optionnal
+*/
+	printf("%d\n",printf("%.d\n", 0));
+	printf("%d\n",printf("%.d\n", -42));
+	printf("%d\n",printf("%*d\n", 42));
+	printf("%d\n",printf("%*d\n", 0));
+	printf("%d\n",printf("%*d\n", -42));
 
 // -------- repetitive options ---------- 
 	printf("------- n_options --------\n");

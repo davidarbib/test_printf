@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/23 13:45:46 by darbib            #+#    #+#             */
-/*   Updated: 2019/12/11 16:13:26 by darbib           ###   ########.fr       */
+/*   Updated: 2019/12/11 23:56:14 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	main(int ac, char **av)
 	char *str = "a%21ki%214748k\n";
 	printf("ret : %d\n", printf(str, 'a', 'b'));
 */
-	ret = printf("%-c\n", (char)0x1b);
+	ret = printf("%045s\n", "test");
 	printf("ret = %d\n", ret);
 	/*
 	(void)av;

@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 14:05:37 by darbib            #+#    #+#             */
-/*   Updated: 2019/12/11 14:21:11 by darbib           ###   ########.fr       */
+/*   Updated: 2019/12/11 23:12:31 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,9 @@
 # define CYAN    "\x1b[36m"
 # define RESET   "\x1b[0m"
 
+void mandatory_c(char *true_buf, char *my_buf, int true_ret, int my_ret);
+void mandatory_s(char *true_buf, char *my_buf, int true_ret, int my_ret);
 
-void	mandatory_c();
 /*
 void	non_conversion();
 void	d_tests();

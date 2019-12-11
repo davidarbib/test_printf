@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 00:39:55 by darbib            #+#    #+#             */
-/*   Updated: 2019/12/11 14:09:04 by darbib           ###   ########.fr       */
+/*   Updated: 2019/12/11 23:13:47 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ int main()
 	char *true_buf = calloc(1000000, sizeof(char));
 	char *my_buf = calloc(1000000, sizeof(char));
 
-	true_ret = sprintf(true_buf, "Bonjour\n");
-	my_ret = ft_sprintf(my_buf, "Bonjour\n");
-	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
+	mandatory_c(true_buf, my_buf, true_ret, my_ret);
+	mandatory_s(true_buf, my_buf, true_ret, my_ret);
 }
