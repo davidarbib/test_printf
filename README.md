@@ -21,6 +21,8 @@ Each conversion test is sliced in seven parts :
 
 no more diff between outcome files
 just strcmp between sprintf et ft_sprintf outcomes
-### pros : now we can prompt line and file location of errors
-### cons : is less shareable until people have to add some lines to transform their printf into sprintf
+### pros :
+now we can prompt line and file location of errors
+### cons : 
+is less shareable until people have to add some lines to transform their printf into sprintf
 
