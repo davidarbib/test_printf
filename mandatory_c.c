@@ -6,14 +6,14 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 14:00:38 by darbib            #+#    #+#             */
-/*   Updated: 2019/12/11 23:56:15 by darbib           ###   ########.fr       */
+/*   Updated: 2019/12/12 15:40:52 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftft_printf.h"
-#include "testft_printf.h"
-#include "tests.h"
+#include <stdlib.h>
 #include <stdio.h>
+#include "ft_sprintf.h"
+#include "tests.h"
 
 void mandatory_c(char *true_buf, char *my_buf, int true_ret, int my_ret)
 {	
@@ -92,5 +92,8 @@ void mandatory_c(char *true_buf, char *my_buf, int true_ret, int my_ret)
 	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
 	true_ret = sprintf(true_buf, "	 		%c 	%3c  oin,v,nkdsgf", 'a', 'y');
 	my_ret = ft_sprintf(my_buf, "	 		%c 	%3c  oin,v,nkdsgf", 'a', 'y');
+	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
+	true_ret = sprintf(true_buf, "%*coin,v,nkdsgf", 32, 'y');
+	my_ret = ft_sprintf(my_buf, "%*coin,v,nkdsgf", 32, 'y');
 	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
 }
