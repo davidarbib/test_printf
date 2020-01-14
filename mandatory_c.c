@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 14:00:38 by darbib            #+#    #+#             */
-/*   Updated: 2019/12/12 15:40:52 by darbib           ###   ########.fr       */
+/*   Updated: 2020/01/13 15:39:02 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void mandatory_c(char *true_buf, char *my_buf, int true_ret, int my_ret)
 	true_ret = sprintf(true_buf, "%3c", 'a');
 	my_ret = ft_sprintf(my_buf, "%3c", 'a');
 	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
+/*
 	true_ret = sprintf(true_buf, "%2147483647c", '\0');
 	my_ret = ft_sprintf(my_buf, "%2147483647c", '\0');
 	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
@@ -64,6 +65,7 @@ void mandatory_c(char *true_buf, char *my_buf, int true_ret, int my_ret)
 	true_ret = sprintf(true_buf, "%2147483648c", 'a');
 	my_ret = ft_sprintf(my_buf, "%2147483648c", 'a');
 	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
+*/
 //				------------option----------- 
 	true_ret = sprintf(true_buf, "%-c", '\0');
 	my_ret = ft_sprintf(my_buf, "%-c", '\0');
@@ -87,8 +89,13 @@ void mandatory_c(char *true_buf, char *my_buf, int true_ret, int my_ret)
 	true_ret = sprintf(true_buf, "ok%5c%104c", 'a', 'y');
 	my_ret = ft_sprintf(my_buf, "ok%5c%104c", 'a', 'y');
 	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
+/*
 	true_ret = sprintf(true_buf, "       ok%-9695c  %c       ", (char)0x0d, 'y');
 	my_ret = ft_sprintf(my_buf, "       ok%-9695c  %c       ", (char)0x0d, 'y');
+	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
+*/
+	true_ret = sprintf(true_buf, "       ok%-9695c  %c       ", 'a', 'y');
+	my_ret = ft_sprintf(my_buf, "       ok%-9695c  %c       ", 'a', 'y');
 	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
 	true_ret = sprintf(true_buf, "	 		%c 	%3c  oin,v,nkdsgf", 'a', 'y');
 	my_ret = ft_sprintf(my_buf, "	 		%c 	%3c  oin,v,nkdsgf", 'a', 'y');

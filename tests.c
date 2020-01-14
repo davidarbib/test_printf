@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 00:39:55 by darbib            #+#    #+#             */
-/*   Updated: 2019/12/12 17:43:44 by darbib           ###   ########.fr       */
+/*   Updated: 2020/01/13 16:50:28 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,13 @@ int main()
 {
 	int true_ret = 0;
 	int my_ret = 0;
-	char *true_buf = calloc(1000000, sizeof(char));
-	char *my_buf = calloc(1000000, sizeof(char));
+	char *true_buf = calloc(BUFOUT_SIZE, sizeof(char));
+	char *my_buf = calloc(BUFOUT_SIZE, sizeof(char));
 
 	mandatory_c(true_buf, my_buf, true_ret, my_ret);
 	mandatory_s(true_buf, my_buf, true_ret, my_ret);
 	mandatory_p(true_buf, my_buf, true_ret, my_ret);
+	mandatory_d(true_buf, my_buf, true_ret, my_ret);
 	printf(GREEN "passed tests " RESET RED "[%d/%d]" RESET "\n", nb_success,
 			nb_tests);
 	if (nb_tests == nb_success)

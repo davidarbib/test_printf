@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 14:05:37 by darbib            #+#    #+#             */
-/*   Updated: 2019/12/12 17:43:44 by darbib           ###   ########.fr       */
+/*   Updated: 2020/01/13 16:43:17 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
-//#include "ft_printf.h"
 # include "ft_sprintf.h"
 
 # define RED     "\x1b[31m"
@@ -33,5 +32,6 @@ void	test_print(char *true_buf, char *my_buf, int true_ret,
 void mandatory_c(char *true_buf, char *my_buf, int true_ret, int my_ret);
 void mandatory_s(char *true_buf, char *my_buf, int true_ret, int my_ret);
 void mandatory_p(char *true_buf, char *my_buf, int true_ret, int my_ret);
+void mandatory_d(char *true_buf, char *my_buf, int true_ret, int my_ret);
 
 #endif

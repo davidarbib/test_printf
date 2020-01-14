@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/23 13:45:46 by darbib            #+#    #+#             */
-/*   Updated: 2019/12/13 16:32:22 by darbib           ###   ########.fr       */
+/*   Updated: 2020/01/13 17:47:58 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "ft_printf.h"
+#include "libft.h"
 
 int	main(int ac, char **av)
 {
@@ -45,5 +46,20 @@ int	main(int ac, char **av)
 /*
 	printf("%ll10c\n", 'a');
 */
-	ft_printf(
+/*
+	printf("true : --%-3p--\n", "ok");
+	ft_printf("mine : --%-3p--\n", "ok");
+	printf("true : --%-3p--\n", NULL);
+	ft_printf("mine : --%-3p--\n", NULL);
+	printf("-%s-\n", ft_ptoa((long)"test"));
+	printf("-%s-\n", ft_ptoa((long)NULL));
+*/
+//	printf("       ok%-9695c  %c       ", (char)0x0d, 'y');
+//	ft_printf("       ok%-9695c  %c       ", (char)0x0d, 'y');
+	printf("true : %06d\n", -42);
+	ft_printf("mine : %06d\n", -42);
+	printf("true : %06.d\n", 0);
+	ft_printf("mine : %06.d\n", 0);
+	printf("true : %d	%5d\n", 4, -56);
+	ft_printf("mine : %d	%5d\n", 4, -56);
 }
