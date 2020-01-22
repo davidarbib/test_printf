@@ -6,7 +6,7 @@
 /*   By: darbib <darbib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 23:10:55 by darbib            #+#    #+#             */
-/*   Updated: 2020/01/13 14:22:03 by darbib           ###   ########.fr       */
+/*   Updated: 2020/01/16 22:29:06 by darbib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,12 @@ void mandatory_p(char *true_buf, char *my_buf, int true_ret, int my_ret)
 	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
 	true_ret = sprintf(true_buf, "    %10p %-36p", "jfdflfk", "ok");
 	my_ret = ft_sprintf(my_buf, "    %10p %-36p", "jfdflfk", "ok");
+	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
+	true_ret = sprintf(true_buf, "%0.10p", NULL);
+	my_ret = ft_sprintf(my_buf, "%0.10p", NULL);
+	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
+	true_ret = sprintf(true_buf, "%020.100p", NULL);
+	my_ret = ft_sprintf(my_buf, "%020.100p", NULL);
 	test_print(true_buf, my_buf, true_ret, my_ret, __LINE__, __FILE__);
 /*
 	true_ret = sprintf(true_buf, "a%2147483646p %-36p", NULL, "ok");
